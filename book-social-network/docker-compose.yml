@@ -3,8 +3,8 @@ services:
     container_name: postgres-sql-bsn
     image: postgres
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Thestrongest12
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data
       POSTGRES_DB: book_social_network
     volumes:
